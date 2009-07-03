@@ -1,0 +1,14 @@
+<center>
+  
+  Enter your email to unsubscribe. <br>
+
+  {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+  
+  <form action="removed" method="post">
+    Email:
+    <input type="text" name="email" />
+    <input type="submit" value="Unsubscribe!"/>
+  </form>
+</center>
+  
+

@@ -1,0 +1,22 @@
+<center>
+  
+  <h1>Enter your email!</h1>
+
+  {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+  
+  <form action="signup" method="post">
+    Email:
+    <input type="text" name="email" />
+    Confirm:
+    <input type="text" name="confirm" />
+    <br>
+    Month:
+    <input type="text" name="month" />
+    Year
+    <input type="text" name="year" />
+    <br>
+    <input type="submit" value="Sign Up!"/>
+  </form>
+</center>
+  
+
