@@ -1,0 +1,74 @@
+<html>
+  <head>
+    {% block head %}
+    {% endblock head %}
+    <link href="http://www.xkenneth.com/media/css/base.css" type="text/css" media="all" rel="stylesheet" />
+  </head>
+  <body>
+    <center>
+      <table border="0" id="maintable">
+	<tr>
+	  <td>
+	    <!-- Google Slot Left -->
+	    <script type="text/javascript"><!--
+					       google_ad_client = "pub-7324549546474573";
+					       /* 120x240, created 7/3/09 */
+					       google_ad_slot = "9396079603";
+					       google_ad_width = 120;
+					       google_ad_height = 240;
+					       //-->
+	    </script>
+	    <script type="text/javascript"
+		    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	    </script>
+	  </td>
+	  <td>
+	    <div id="content">
+	      <!-- content goes here -->
+	      <div id="title">
+	      </div>
+	      <div id="content">
+		{% block body %}
+		{% endblock body %}
+	      </div>
+	    </div>
+	  </td>
+	  <td>
+	    <!-- Google Slot Right -->
+	    <script type="text/javascript"><!--
+					       google_ad_client = "pub-7324549546474573";
+					       /* 120x240, created 7/3/09 */
+					       google_ad_slot = "9485572689";
+					       google_ad_width = 120;
+					       google_ad_height = 240;
+					       //-->
+	    </script>
+	    <script type="text/javascript"
+		    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	    </script>
+	  </td>
+	</tr>
+      </table>
+    </center>
+    
+    <!-- Google Analytics Tracking Code -->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-4657856-6");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+
+    <div id="disclaimer">
+      This site takes no responsibility for your liability to renew your state registration sticker. This site is not responsible for any citations, fines, or other penalties you may incur by not renewing your registration sticker. Email delivery is not guaranteed, it's not our fault if your spam filter catches our emails! This site is in NO WAY affiliated with any state or federal government organization.
+    </div>
+    <div id="unsubscribe">
+      <a href="http://www.dontpaythestate.com/unsubscribe">Unsubscribe</a>
+    </div>
+  </body>
+  <script type="text/javascript">
+</html>

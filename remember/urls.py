@@ -17,4 +17,6 @@ urlpatterns = patterns('',
                        
     (r'^removed', 'dontpaythestate.remember.views.removed'),
 
+    (r'^activate/(?P<uid>.+)$', 'dontpaythestate.remember.views.activate'),
+
     )

@@ -1,16 +1,14 @@
+{% extends 'base.html' %}
+
 {% block head %}
-    <link href="{{ MEDIA_URL }}/css/forms.css" type="text/css" media="all" rel="stylesheet" />
+
     {{ form.media }}
 {% endblock head %}
-
-{% block navigation %}
-{% include navigation_template %}
-{% endblock navigation %}
 
 {% block subtitle %}<h3>{{ subtitle }}</h3>{% endblock subtitle %}
 
 {% block body %}
-
+Enter your email and the expiration date of your registration sticker below to be reminded to renew your sticker!
 <form method="POST" action=".">
 {{ form.as_p }}
 <input id="submit" value="Submit" type="submit">
